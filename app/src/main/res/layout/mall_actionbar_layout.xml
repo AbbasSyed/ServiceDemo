@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout1"
+        android:background="@drawable/actionbar_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:id="@+id/imageView_menu"
+            android:src="@drawable/menu_button"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:id="@+id/imageView_back"
+            android:src="@drawable/back_button"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:contentDescription="@null"  />
+
+        <!--logo and Screen Title - start-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:id="@+id/imageView_ActionBarLogo"
+            android:src="@drawable/mall_logo"
+            android:visibility="gone"
+            android:contentDescription="@null"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/textView_ActionBarTitle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Home"
+            android:textColor="#f37854"
+            android:layout_alignBottom="@+id/imageView_search" />
+        <!--logo and Screen Title -end-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/imageView_search"
+            android:src="@drawable/search_button"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/imageView_notification"
+            android:src="@drawable/notification_button"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"  />
+    </RelativeLayout>
+
+</LinearLayout>
